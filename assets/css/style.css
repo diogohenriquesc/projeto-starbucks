@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+:root {
+    --font1: 'Open-sans', sans-serif;
+    --font2: 'Oswald', sans-serif;
+    --mw: 1140px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+
+
+header .line {
+    background-color: #167051;
+    height: 10px;
+}
+
+.container {
+    max-width: var(--mw);
+    margin: 0 auto;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img {
+    width: 64px;
+}
+
+.header--search {
+    border: 1px solid rgba(0, 0, 0, 30%);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header--search input {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    height: 100%;
+}
+
+.header--search img {
+    width: 18px;
+    padding: 9px;
+    border: 1px solid transparent;
+}
+
+.header--search img:hover {
+    border: 1px solid #000;
+}
+
