@@ -224,4 +224,86 @@ h2 {
     height: 450px;
 }
 
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3--content {
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center left;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 200px;
+}
+
+.area3--img {
+    background-image: url('../images/f5.jpg');
+    background-size: cover;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 770px;
+}
+
+.area3--text {
+    margin: 20px 0 80px 0;
+    line-height: 25px;
+}
+
+.area4 {
+   display: grid;
+   grid-template-columns: 506px 1fr;
+   background-color: #E8E9EE;
+}
+
+.area4--content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    align-self: center;
+    padding-left: 190px;
+
+}
+
+.area4--text {
+    line-height: 25px;
+    margin: 20px 0 80px 0;
+}
+
+.area4--img {
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 770px;
+}
+
+.area5 {
+    background-color: #E8E9EE;
+}
+
+.area5--img {
+    max-width: 1140px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #333333;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+footer a {
+    color: #fff;
+}
 
