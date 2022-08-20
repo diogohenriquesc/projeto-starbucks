@@ -154,12 +154,15 @@ h2 {
 
 .area1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,  1fr);
 }
 
 .area1--content {
     grid-column: 1 / 2;
-    padding: 100px;
+    padding: 80px 50px;
+    width: 490px;
+    align-self: center;
+    justify-self: center;
 }
 
 .area1--img1 {
@@ -198,7 +201,10 @@ h2 {
 .area2--content {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding:100px;
+    width: 490px;
+    padding: 80px 50px;
+    align-self: center;
+    justify-self: center;
 }
 
 .area2--text {
@@ -227,16 +233,19 @@ h2 {
 .area3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: left bottom;
+    height: 770px;
 }
 
 .area3--content {
-    background-image: url('../images/bg2.jpg');
-    background-size: cover;
-    background-position: center left;
-
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 200px;
+    width: 490px;
+    padding: 80px 50px;
+    align-self: center;
+    justify-self: center;
 }
 
 .area3--img {
@@ -245,7 +254,6 @@ h2 {
 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    height: 770px;
 }
 
 .area3--text {
@@ -263,9 +271,9 @@ h2 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
+    width: 300px;
     align-self: center;
-    padding-left: 190px;
-
+    justify-self: end;
 }
 
 .area4--text {
@@ -276,7 +284,7 @@ h2 {
 .area4--img {
     background-image: url('../images/bg3.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -285,11 +293,12 @@ h2 {
 
 .area5 {
     background-color: #E8E9EE;
+    padding: 0 60px;
 }
 
 .area5--img {
     max-width: 1140px;
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
     background-image: url('../images/bg4.jpg');
     background-size: cover;
@@ -304,6 +313,121 @@ footer {
 }
 
 footer a {
+    color: lightgreen;
+}
+
+footer a:hover {
     color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area4 {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .area4--content {
+        justify-self: end;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header--search input {
+        max-width: 70px;
+    }
+    
+    .banner h1 {
+        font-size: 55px;
+        line-height: 52px;
+    }
+
+    .banner--images img {
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    .area1 {
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content {
+        width: 320px;
+        padding: 80px 30px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .area1--img2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .area1--img2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .area2 {
+        grid-template-columns: 1fr;
+    }
+
+    .area2--content {
+        width: 320px;
+        padding: 80px 30px;
+    }
+
+    .area3--content {
+        width: 320px;
+        padding: 80px 30px;
+    }
+
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area4--content {
+        width: 320px;
+        justify-self: center;
+        padding: 80px 20px;
+    }
+
+    .area5 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .area5--img {
+        min-height: 220px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
